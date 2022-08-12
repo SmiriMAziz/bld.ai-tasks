@@ -311,6 +311,7 @@ body{
     margin-right: 30px ;
     margin-left: 50px;
     margin-top: 10px;
+    flex-wrap: wrap;
 }
 
 .courses-titles {
@@ -443,6 +444,7 @@ body{
         flex-wrap: wrap;
         justify-content: space-between;
         flex-direction: column;
+        
         
     }
 
