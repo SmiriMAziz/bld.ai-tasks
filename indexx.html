@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="mystyle.css" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
    
@@ -30,7 +31,7 @@
                 <button id="search-button">
                     <img src="https://th.bing.com/th/id/R.1ed3eb5f2cf5b6fc82b6e5aa8635cac9?rik=%2fibd5nMZf6xg2w&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_200373.png&ehk=gCM3RB8if%2bxLUF8pOv0ABjWBLysVvRtuLy4ngj5lq3U%3d&risl=&pid=ImgRaw&r=0" alt="searh-icon" id = "search-icon">
                 </button>
-                <input type="text" placeholder="Search for anything">
+                <input type="text" placeholder="Search for anything" data-search>
            </div>
            <div class="left-container">
                 <div id="business">Udemy-business</div>
@@ -79,12 +80,15 @@
         </div>
         <div class="fields-container">
             <div style="color:black;">Python</div>
-            <div>Excel</div>
-            <div>Web Development</div>
-            <div>JavaScript</div>
-            <div>Data Science</div>
-            <div>AWS Certification</div>
-            <div>Drawing</div>
+            <div class="fields-container-inside">
+                
+                <div>Excel</div>
+                <div>Web Development</div>
+                <div>JavaScript</div>
+                <div>Data Science</div>
+                <div>AWS Certification</div>
+                <div>Drawing</div>
+            </div>
         </div>
 
     </div>
@@ -108,95 +112,38 @@
         </div>
         <button class="explore-python-container"><h3>Explore Python</h3></button>
 
-        <ul class="ul-img-container">
-            <li> <img src="https://img-c.udemycdn.com/course/240x135/394676_ce3d_5.jpg" alt="img1"> </li>
-            <li> <img src="https://img-c.udemycdn.com/course/240x135/396876_cc92_7.jpg" alt="img1"> </li>
-            <li> <img src="https://img-c.udemycdn.com/course/240x135/405878_e5a0_3.jpg" alt="img1"> </li>
-            <li> <img src="https://img-c.udemycdn.com/course/240x135/426570_1b91_3.jpg" alt="img1"> </li>
-            <li> <img src="https://img-c.udemycdn.com/course/240x135/449532_2aa9_7.jpg" alt="img1"> </li>
-        </ul>
+       
+           
 
-        <div class="courses-names-container">
-            
-                <div class="courses-titles">
-                    <h4>Learn Python: The Complete Python Programming Course</h4>
-                    <p>Avinash Jain, The Codex</p>
-                    <div class="course-rate">
-                        <span class="checked-note">4.4</span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star-half-full checked"></span>
-                        <span class="students">(2,923)</span>
+            <div class="courses-names-container"  courses-names>
+                
+                <template  template-container>
+                    <div class="courses-titles">
+                        <img src="" alt="img1" id="course-image" course-image style="width:100% ;"> 
+                        <h4 course-header></h4>
+                        <p course-paragraph></p>
+                        <div class="course-rate" >
+                            <span class="checked-note" id="course-note" course-note></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-half-full checked"></span>
+                            <span class="students" course-students></span>
+                        </div>
+                        <div class="course-price2" id="price-div" price-div></div>
                     </div>
-                    <div class="course-price2" id="price-div">$84.99</div>
-                </div>
-                <div class="courses-titles">           
-                    <h4>Learning Python for Data Analysis and Visualization</h4>
-                    <p>Jose Portilla</p>
-                    <div class="course-rate">
-                        <span class="checked-note">4.4</span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star-half-full checked"></span>
-                        <span class="students">(17,986)</span>
-                    </div>
-                    <div class="course-price2" id="price-div">$84.99</div>
-                </div>
-                <div class="courses-titles">  
-                    <h4>Python for Beginners - Learn Programming from scratch</h4>
-                    <p>Edwin Diaz, Coding Faculty Solutions</p>
-                    <div class="course-rate">
-                        <span class="checked-note">4.4</span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star-half-full checked"></span>
-                        <span class="students">(1,770)</span>
-                    </div>
-                    <div class="course-price2" id="price-div">$84.99</div>
-                </div>
-                <div class="courses-titles">  
-                    <h4> Learn Python: Python for Beginners</h4>
-                    <p>Abrar Hussain</p>
-                    <div class="course-rate">
-                        <span class="checked-note">4.3</span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star-half-full checked"></span>
-                        <span class="students">(2,768)</span>
-                    </div>
-                    <div class="course-price2" id="price-div">$29.99</div>
-                </div>
-                <div class="courses-titles">  
-                    <h4> Python Beyond the Basics - Object-Oriented Programming</h4>
-                    <p>Infinite Skills</p>
-                    <div class="course-rate">
-                        <span class="checked-note">4.4</span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star-half-full checked"></span>
-                        <span class="students">(2,929)</span>
-                    </div>
-                    <div class="course-price2" id="price-div">$49.99</div>
-               </div>
-        </div>
+                </template>
+                 
+            </div>
+        
 
-        <div class="stars">
+        
 
         
 
 
        
-
 
 
 

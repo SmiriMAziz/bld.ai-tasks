@@ -15,18 +15,36 @@ body{
     display: flex;
     margin: auto;
     align-content: center;
-    justify-content: center;
-    padding: 20px;
+    justify-content: space-around;
+    padding: 10px;
     font-weight: 500;
     font-size: 16px;
     box-shadow: 0px 10px whitesmoke ; 
-   
+    overflow: hidden;
+
 }
+
+.categories-container:hover{
+    color: blueviolet;
+}
+#business:hover{
+    color: blueviolet;
+}
+#teach:hover{
+    color: blueviolet;
+}
+.login-container button:hover{
+    background-color: rgb(231, 227, 227);
+}
+
 
 
 .search-bar-container{
     margin: 5px 10px;
-    flex-grow: 1;
+    flex-grow: 3;
+    display: flex;
+    justify-content: flex-end;
+    
 }
 
 .search-bar-container input{
@@ -36,13 +54,10 @@ body{
     border-radius: 100px;
     margin-top: 5px;
     padding: 20px;
-    margin-left:auto;
     background-color: whitesmoke;
-    position: relative;
-    width: 700px;
     align-items: center;
     padding-left: 20px;
-
+    width : 90% ; 
     
 
 }
@@ -73,6 +88,15 @@ body{
     width: 15px;
     cursor: pointer;
 }
+#search-button {
+    position: absolute;
+    z-index: 1 ; 
+    margin-top: 15px;
+    margin-right: 15px;
+    width: 15px;
+    cursor: pointer ; 
+   
+}
 
 .logo-container {
     cursor: pointer;
@@ -91,21 +115,13 @@ body{
         padding: 10px;
         margin-right: 20px;
         margin-left: 20px;
-        justify-content: center;
+        justify-content: space-around;
         align-content: center;
         
    
 }
 
-#search-button {
-    position: absolute;
-    z-index: 1 ; 
-    margin-top: 15px;
-    margin-left: 660px;
-    width: 15px;
-    cursor: pointer;
-   
-}
+
 .left-container button {
 
     
@@ -166,24 +182,28 @@ body{
         align-content: center;
         justify-content: center;
         position: relative;
+        flex-wrap: wrap;
         margin-top: 10px;
 
 
 }
 
+.alarm{
+    width: 100%;
+}
 
 .text {
 
     
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 20%;
     background-color: white;
     box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
     padding: 2.4rem;
     color: black;
-    height: 220px;
-    width: 300px;
+    height: 50%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -191,10 +211,10 @@ body{
 }
 
 .headline {
-    width: 100%;
-    max-width: 134rem;
+    width: 95% ; 
     margin-right: auto;
-    margin-left: 250px;
+    margin-left: 5%;
+    margin-right: 5%;
     padding-right: 2.4rem;
     padding-left: 2.4rem;
     
@@ -234,21 +254,36 @@ body{
     word-spacing: 2px;
     cursor: pointer;
 }
+.fields-container-inside {
 
- div + div {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    font-weight: bold;
+    color: rgb(130, 130, 130);
+    word-spacing: 2px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+ .fields-container-inside div + div {
 
    margin-left: 25px;
+   
 }
 
 .courses-container {
 
     margin-top: 50px;
-    margin-left: 300px;
-    width: 1400px;
-    height: 600px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    padding: 5%;
+    height: auto ; 
     background: white;
     position: absolute;
     border: 1px solid grey;
+    overflow: hidden;
     
     
 }
@@ -266,7 +301,7 @@ body{
 }
 .par-text-container {
 
-    width: 800px;
+    width: 100%;
 }
 
 .explore-python-container {
@@ -282,18 +317,6 @@ body{
     border: 1px solid #1c1d1f;
 }
 
-ul {
-
-    display: flex;
-    align-content: center;
-    justify-content: space-between;
-    margin-top: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: auto ;
-    list-style-type: none;
-}
-
 
 .courses-names-container{
 
@@ -303,8 +326,14 @@ ul {
     margin-right: 30px ;
     margin-left: 50px;
     margin-top: 10px;
+    flex-wrap: wrap;
 }
 
+.courses-names-container > img{
+
+    width: 20%;
+    height: auto;
+}
 .courses-titles {
 
     width: 300px;
@@ -314,6 +343,10 @@ ul {
 
     font-size: 12px;
     color: gray;
+}
+
+.hide{
+    display: none;
 }
 
 #price-div {
@@ -335,7 +368,27 @@ ul {
 
   /* META QUERIES */ 
 
-  
+@media screen and (max-width: 1070px) {
+    .text{
+        height: 80%;
+    }
+    .headline{
+        margin-left: 5%;
+    }
+    .fields-container-inside{
+        flex-direction: column;
+        align-content: flex-start;
+        margin: 0px;
+    }
+    .fields-container{
+        flex-direction: column;
+       
+        margin: 0px;
+    }
+    .fields-container-inside div+div{
+        margin: 0px;
+    }
+}
   
 @media screen and (max-width: 900px) {
    
@@ -366,24 +419,56 @@ ul {
     .logo-container{
         display: flex;
         flex-direction: row-reverse;
-        justify-content: flex-end;
-        padding-left: 700px;
+    }
+    .nav-container{
+        display: block;
+    }
+    .left-container{
+        display: block;
     }
     .toogle-button{
         display: flex;
     }
-    /* this doesn't work but i have no idea why !! */ 
+    
     .alarm-container {
 
-       flex-direction: column-reverse;
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
 
+    .text {
+
+            
+        position:relative;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+    }
+
+   
+    .headline{
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 10%;
+    }
+    .courses-container{
+        width: 100%;
+        height: auto;
+        margin-left: 0%;
+    }
+    .fields-container{
+        flex-wrap: wrap;
     }
 
 
-    .courses-container{
+    .courses-names-container{
         
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
         flex-direction: column;
+        
         
     }
 

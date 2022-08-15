@@ -1,0 +1,49 @@
+{
+    "coursees":[ 
+        {
+            
+            "header": "Learn Python: The Complete Python Programming Course",
+            "description": "Avinash Jain, The Codex",
+            "rating": 4.4,
+            "img": "https://img-c.udemycdn.com/course/750x422/394676_ce3d_5.jpg",
+            "students": 2923 ,
+            "price": 16.99
+        },
+        {
+            
+            "header": "Learning Python for Data Analysis and Visualization",
+            "description": "Learn python and how to use it to analyze,visualize and present data. Includes tons of sample code and hours of video!",
+            "rating": 4.4,
+            "img": "https://img-c.udemycdn.com/course/750x422/396876_cc92_7.jpg",
+            "students":3000,
+            "price": 19.99
+        },
+        {
+            
+            "header": "Python for Beginners - Learn Programming from scratch",
+            "description": "Python For Beginners : This course is meant for absolute beginners in programming or in python.",
+            "rating": 4.4,
+            "img": "https://img-c.udemycdn.com/course/750x422/405878_e5a0_3.jpg",
+            "students":3000,
+            "price": 14.99
+        },
+        {
+            
+            "header": "Learn Python: Python for Beginners",
+            "description": "Python introduction for beginners. Learn complete Python from scratch!",
+            "rating": 4.4,
+            "img": "https://img-c.udemycdn.com/course/750x422/426570_1b91_3.jpg",
+            "students": 3000,
+            "price": 16.99
+        },
+        {
+           
+            "header": "Python Beyond the Basics - Object-Oriented Programming",
+            "description": "From Classes To Inheritance - OOP In-Depth For Python Programmers",
+            "rating": 4.4,
+            "img": "https://img-c.udemycdn.com/course/750x422/449532_2aa9_7.jpg",
+            "students": 3000,
+            "price": 17.99
+        }
+    ]
+}
