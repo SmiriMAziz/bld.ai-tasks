@@ -21,8 +21,22 @@ body{
     font-size: 16px;
     box-shadow: 0px 10px whitesmoke ; 
     overflow: hidden;
-   
+
 }
+
+.categories-container:hover{
+    color: blueviolet;
+}
+#business:hover{
+    color: blueviolet;
+}
+#teach:hover{
+    color: blueviolet;
+}
+.login-container button:hover{
+    background-color: rgb(231, 227, 227);
+}
+
 
 
 .search-bar-container{
@@ -263,7 +277,8 @@ body{
     margin-top: 50px;
     margin-left: 5%;
     margin-right: 5%;
-    width: 95%;
+    width: 90%;
+    padding: 5%;
     height: auto ; 
     background: white;
     position: absolute;
