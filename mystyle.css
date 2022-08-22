@@ -211,10 +211,10 @@ body{
 }
 
 .headline {
-    width: 95% ; 
-    margin-right: auto;
-    margin-left: 5%;
-    margin-right: 5%;
+    width: 80% ; 
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
     padding-right: 2.4rem;
     padding-left: 2.4rem;
     
@@ -224,19 +224,18 @@ body{
 
 .headline-main-text {
 
-    max-width: 80rem;
+    
     font-family: SuisseWorks,Georgia,Times,times new roman,serif,apple color emoji,segoe ui emoji,segoe ui symbol;
     font-weight: 700;
     font-size: 2.2rem;
     line-height: 1.25;
     letter-spacing: -.05rem;
-    margin-left: 15px;
+    
 }
 
 .headline-sub-text {
 
-    margin-top: .8rem;
-    max-width: 80rem;
+    
     font-family: udemy sans,sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
     font-weight: 400;
     line-height: 1.4;
@@ -244,44 +243,16 @@ body{
 }
 
 
-.fields-container {
 
-    display: flex;
-    align-content: center;
-    margin-top: 15px;
-    font-weight: bold;
-    color: rgb(130, 130, 130);
-    word-spacing: 2px;
-    cursor: pointer;
-}
-.fields-container-inside {
-
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    font-weight: bold;
-    color: rgb(130, 130, 130);
-    word-spacing: 2px;
-    cursor: pointer;
-    margin-left: 20px;
-}
-
- .fields-container-inside div + div {
-
-   margin-left: 25px;
-   
-}
 
 .courses-container {
 
-    margin-top: 50px;
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 90%;
-    padding: 5%;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 70%;
+    padding: 2%;
     height: auto ; 
-    background: white;
-    position: absolute;
     border: 1px solid grey;
     overflow: hidden;
     
@@ -290,7 +261,7 @@ body{
 
 .content-text-container {
 
-    margin-top: 50px;
+    margin-top: 2%px;
     margin-left: 50px;
 }
 
@@ -306,15 +277,17 @@ body{
 
 .explore-python-container {
 
-    width: 170px;
-    height: 40px;
+    width: fit-content;
+    height: auto;
     margin-left: 50px;
-    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 3px ;
     text-align: center;
     cursor: pointer;
     color: #1c1d1f;
     background-color: transparent;
     border: 1px solid #1c1d1f;
+    font-family: udemy sans,sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
 }
 
 
@@ -323,20 +296,27 @@ body{
     display: flex;
     align-content: center;
     justify-content: space-between;
-    margin-right: 30px ;
-    margin-left: 50px;
-    margin-top: 10px;
     flex-wrap: wrap;
+    margin-bottom: 10px;
 }
 
-.courses-names-container > img{
+.all-courses{
 
-    width: 20%;
-    height: auto;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 }
+
+.courses-titles{
+
+    min-width: 214px;
+}
+
 .courses-titles {
 
-    width: 300px;
+    width: 214px;
+    flex-wrap: nowrap;
 }
 
 .courses-titles > p {
@@ -362,6 +342,24 @@ body{
     color: coral;
 }
 
+
+
+  
+.nav-tabs .nav-item .nav-link.active {
+    color: black !important ; 
+    --bs-nav-tabs-border-width: 0px ; 
+}
+  
+ .nav-tabs{
+    border-bottom: 0px !important;
+ }
+  
+ .carousel-control-next, .carousel-control-prev{
+
+    opacity: .2 !important;
+    height: 15% !important;
+    top: 25% !important;
+ }
 
 
 
@@ -477,4 +475,13 @@ body{
 }
 
    
- 
+@media screen and (max-width: 500px) {
+
+        .content-text-container{
+            display: none;
+        }
+        .explore-python-container{
+            display: none;
+        }
+
+}

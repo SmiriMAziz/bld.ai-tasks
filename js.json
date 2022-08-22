@@ -1,0 +1,123 @@
+{
+    
+    "head":{
+        "content" :  "Grow your software development skills with JavaScript"
+    },
+    
+    "desc":{
+        "content" :  "JavaScript is a text-based computer programming language used to make dynamic web pages. A must-learn for aspiring web developers or programmers, JavaScript can be used for features like img carousels, displaying countdowns and timers, and playing media on a webpage. With JavaScript online classes, you can learn to build"
+    } , 
+    "btn" : {
+        "content" : "Explore JavaScript"
+    } , 
+    "coursees": [
+      {
+        
+        "header": "Javascript for Beginners",
+        "description": "Learn javascript online and supercharge your web design with this Javascript for beginners training course.",
+        "rating": 4.4421487,
+        "img": "https://img-c.udemycdn.com/course/750x422/8324_fa84_13.jpg",
+        "students": 2923 ,
+        "price": 14.99
+      },
+      {
+        "id": 63612,
+        "header": "1 Hour JavaScript",
+        "description": "Learn how to code in JavaScript in 1 hour. This class is set up for complete beginners!",
+        "rating": 4.3560605,
+        "img": "https://img-c.udemycdn.com/course/750x422/63612_8797_4.jpg",
+        "students": 2923 ,
+        "price": 16.99
+      },
+      {
+        "id": 364426,
+        "header": "JavaScript: Understanding the Weird Parts",
+        "description": "An advanced JavaScript course for everyone! Scope, closures, prototypes, 'this', build your own framework, and more.",
+        "rating": 4.7157393,
+        "img": "https://img-c.udemycdn.com/course/750x422/364426_2991_6.jpg",
+        "students": 2923 ,
+        "price": 19.99
+      },
+      {
+        "id": 405818,
+        "header": "Javascript for Beginners Learn by Doing Practical Exercises",
+        "description": "JavaScript for Beginners : Work closely with me doing exercises & learn more. I make Javascript easy for you guaranteed.",
+        "rating": 4.3827057,
+        "img": "https://img-c.udemycdn.com/course/750x422/405818_aa3f_3.jpg",
+        "students": 2923 ,
+        "price": 17.99
+      },
+      {
+        "id": 426196,
+        "header": "JavaScript from Beginner to Expert",
+        "description": "Become a JavaScript expert in 30 days, even if you are a JS beginner. Become a front-end developer of websites in JS",
+        "rating": 4.2297297,
+        "img": "https://img-c.udemycdn.com/course/750x422/426196_3cb8_4.jpg",
+        "students": 2923 ,
+        "price": 14.99
+      },
+      {
+        "id": 584494,
+        "header": "JavaScript for Kids: Code Your Own Games and Apps at Any Age",
+        "description": "JavaScript coding course for beginners of all ages, build your own interactive games and apps in JavaScript!",
+        "rating": 4.5064936,
+        "img": "https://img-c.udemycdn.com/course/750x422/584494_f309_6.jpg",
+        "students": 2923 ,
+        "price": 16.99
+      },
+      {
+        "id": 670034,
+        "header": "Advanced Javascript",
+        "description": "In only seven hours you will learn enough javascript to transform from a Junior JS Dev into a Senior JS Guru",
+        "rating": 4.535593,
+        "img": "https://img-c.udemycdn.com/course/750x422/670034_ce04_6.jpg",
+        "students": 2923 ,
+        "price": 14.99
+      },
+      {
+        "id": 695656,
+        "header": "The Complete JavaScript Course For Web Development Beginners",
+        "description": "In this course students will learn the basics of JavaScript and beyond to help them in their web development needs",
+        "rating": 4.2352943,
+        "img": "https://img-c.udemycdn.com/course/750x422/695656_4395_7.jpg",
+        "students": 2923 ,
+        "price": 14.99
+      },
+      {
+        "id": 851712,
+        "header": "The Complete JavaScript Course 2022: From Zero to Expert!",
+        "description": "The modern JavaScript course for everyone! Master JavaScript with projects, challenges and theory. Many courses in one!",
+        "rating": 4.7784243,
+        "img": "https://img-c.udemycdn.com/course/750x422/851712_fc61_6.jpg",
+        "students": 2923 ,
+        "price": 24.99
+      },
+      {
+        "id": 860812,
+        "header": "JavaScript Beginner Bootcamp (2022)",
+        "description": "JavaScript for Beginners: Projects based learning, whiteboard animations, coding in the browser and quizzes.",
+        "rating": 4.428571,
+        "img": "https://img-c.udemycdn.com/course/750x422/860812_f16e_23.jpg",
+        "students": 2923 ,
+        "price": 18.99
+      },
+      {
+        "id": 861624,
+        "header": "ES6 Javascript: The Complete Developer's Guide",
+        "description": "ES6 Javascript Development from scratch.  Get practice with live examples and learn exactly where to apply ES6 features.",
+        "rating": 4.6694713,
+        "img": "https://img-c.udemycdn.com/course/750x422/861624_864d_2.jpg",
+        "students": 2923 ,
+        "price": 15.99
+      },
+      {
+        "id": 886300,
+        "header": "Accelerated JavaScript Training",
+        "description": "Take a deep dive into JavaScript, a Must-Know Language in Web Development, with a Hands-on, Example-driven Approach",
+        "rating": 4.5462427,
+        "img": "https://img-c.udemycdn.com/course/750x422/886300_3557.jpg",
+        "students": 2923 ,
+        "price": 14.99
+      }
+    ]
+  }

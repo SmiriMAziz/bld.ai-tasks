@@ -1,0 +1,122 @@
+{
+    
+    "head":{
+       "content" :  "Become an expert in cloud computing with AWS Certification"
+    } , 
+    "desc":{
+        "content" :  "Prep for your AWS certification with an AWS course on Udemy. Learn the fundamentals of AWS such as working with a serverless platform, the various frameworks, security and more. With these courses, you’ll build the valuable skills you need to implement cloud initiatives — and open up new career opportunities. If you want to become an AWS developer, we’ve got the course for you."
+    },
+    "btn" : {
+        "content" : "Explore AWS Certification"
+    } , 
+    "coursees": [
+      {
+        
+        "header": "Amazon Web Services (AWS) Certified 2022 - 4 Certifications!",
+        "description": "Videos, labs & practice exams - AWS Certified (Solutions Architect, Developer, SysOps Administrator, Cloud Practitioner)",
+        "rating": 4.577187,
+        "img": "https://img-c.udemycdn.com/course/750x422/1047846_83ef_29.jpg",
+        "students": 2923 ,
+        "price": 29.99
+      },
+      {
+        
+        "header": "AWS Certified Security Specialty 2022",
+        "description": "All you need to master AWS Certified Security Specialty certification.",
+        "rating": 4.691136,
+        "img": "https://img-c.udemycdn.com/course/750x422/1102458_d6e6_2.jpg",
+        "students": 2923 ,
+        "price": 34.99
+      },
+      {
+        
+        "header": "Part 1: AWS Certified Solutions Architect SAA C03 [Updated]",
+        "description": "AWS Associate Exam - Master Foundations. Join Live Study Group Q&A!",
+        "rating": 4.570707,
+        "img": "https://img-c.udemycdn.com/course/750x422/1135330_0e31_10.jpg",
+        "students": 2923 ,
+        "price": 14.99
+      },
+      {
+        
+        "header": "Practice Test AWS Solutions Architect Associate SAA C03",
+        "description": "[Updated] In One Hour, You will Gain Substantial Insight to Pass the Certification Exam. Join Live Study Group Q&A!",
+        "rating": 4.6486487,
+        "img": "https://img-c.udemycdn.com/course/750x422/1162310_5ee3_4.jpg",
+        "students": 2923 ,
+        "price": 14.99
+      },
+      {
+        
+        "header": "AWS Certified Solution Architect - Associate",
+        "description": "Includes 2 Practice Tests - 130 Practice Test Questions",
+        "rating": 4.581818,
+        "img": "https://img-c.udemycdn.com/course/750x422/1236626_b910_4.jpg",
+        "students": 2923 ,
+        "price": 16.99
+      },
+      {
+        
+        "header": "AWS Certified Solutions Architect - Associate 2022",
+        "description": "Beginner to Advanced",
+        "rating": 4.615854,
+        "img": "https://img-c.udemycdn.com/course/750x422/1328072_e082_5.jpg",
+        "students": 2923 ,
+        "price": 29.99
+      },
+      {
+        
+        "header": "The Ultimate AWS Certified Solutions Architect - Associate",
+        "description": "Pass the AWS certification exam by mastering the most important AWS services: IAM, EC2, Route 53 (DNS), VPC, and RDS.",
+        "rating": 4.5,
+        "img": "https://img-c.udemycdn.com/course/750x422/1343886_9003_3.jpg",
+        "students": 2923 ,
+        "price": 17.99
+      },
+      {
+        
+        "header": "AWS Certified Cloud Practitioner 2022",
+        "description": "Beginner to Advanced",
+        "rating": 4.649927,
+        "img": "https://img-c.udemycdn.com/course/750x422/1360446_f69e.jpg",
+        "students": 2923 ,
+        "price": 19.99
+      },
+      {
+        
+        "header": "AWS Certified Solutions Architect - Professional 2022",
+        "description": "All you need to master AWS Solutions Architect - Professional certification",
+        "rating": 4.5654764,
+        "img": "https://img-c.udemycdn.com/course/750x422/1425762_36e3.jpg",
+        "students": 2923 ,
+        "price": 34.99
+      },
+      {
+        
+        "header": "AWS Certified Cloud Practitioner - Updated 2020",
+        "description": "Pass your Cloud Practitioner certification Exam. Includes 175 practice questions",
+        "rating": 4.604651,
+        "img": "https://img-c.udemycdn.com/course/750x422/1477998_1fa5_3.jpg",
+        "students": 2923 ,
+        "price": 14.99
+      },
+      {
+        
+        "header": "AWS Certified Advanced Networking - Specialty 2022",
+        "description": "All you need to master AWS Certified Advanced Networking - Specialty certification",
+        "rating": 4.5820894,
+        "img": "https://img-c.udemycdn.com/course/750x422/1581742_5d24_3.jpg",
+        "students": 2923 ,
+        "price": 34.99
+      },
+      {
+        
+        "header": "AWS Certified Security Specialist",
+        "description": "This course is specially built to prepare you for taking on the AWS Certified Security Specialty Exam",
+        "rating": 4.616279,
+        "img": "https://img-c.udemycdn.com/course/750x422/1717968_a945_4.jpg",
+        "students": 2923 ,
+        "price": 17.99
+      }
+    ]
+  }

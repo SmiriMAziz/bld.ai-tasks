@@ -1,0 +1,122 @@
+{
+    
+    "head": {
+        "content" :  "Lead data-driven decisions with Data Science"
+    } , 
+    "desc":{
+        "content" :  "Data science application is an in-demand skill in many industries worldwide — including finance, transportation, education, manufacturing, human resources, and banking. Explore data science courses with Python, statistics, machine learning, and more to grow your knowledge. Get data science training if you’re into research, statistics, and analytics."
+    } , 
+    "btn" : {
+        "content" : "Explore Data Science"
+    },
+    "coursees": [
+      {
+       
+        "header": "Data Science A-Z™: Real-Life Data Science Exercises Included",
+        "description": "Learn Data Science step by step through real Analytics examples. Data Mining, Modeling, Tableau Visualization and more!",
+        "rating": 4.563353,
+        "img": "https://img-c.udemycdn.com/course/750x422/513244_b831_4.jpg",
+        "students": 2923 ,
+        "price": 14.99
+      },
+      {
+       
+        "header": "Machine Learning, Data Science and Deep Learning with Python",
+        "description": "Complete hands-on machine learning tutorial with data science, Tensorflow, artificial intelligence, and neural networks",
+        "rating": 4.5970984,
+        "img": "https://img-c.udemycdn.com/course/750x422/671576_a272_4.jpg",
+        "students": 2923 ,
+        "price": 14.99
+      },
+      {
+       
+        "header": "Data Science: Deep Learning and Neural Networks in Python",
+        "description": "The MOST in-depth look at neural network theory for machine learning, with both pure Python and Tensorflow code",
+        "rating": 4.687204,
+        "img": "https://img-c.udemycdn.com/course/750x422/713104_d4cb.jpg",
+        "students": 2923 ,
+        "price": 14.99
+      },
+      {
+       
+        "header": "R Programming A-Z™: R For Data Science With Real Exercises!",
+        "description": "Learn Programming In R And R Studio. Data Analytics, Data Science, Statistical Analysis, Packages, Functions, GGPlot2",
+        "rating": 4.676401,
+        "img": "https://img-c.udemycdn.com/course/750x422/765242_2578_6.jpg",
+        "students": 2923 ,
+        "price": 14.99
+      },
+      {
+        
+        "header": "Data Science and Machine Learning Bootcamp with R",
+        "description": "Learn how to use the R programming language for data science and machine learning and data visualization!",
+        "rating": 4.7661066,
+        "img": "https://img-c.udemycdn.com/course/750x422/821726_8071.jpg",
+        "students": 2923 ,
+        "price": 14.99
+      },
+      {
+        
+        "header": "R Programming: Advanced Analytics In R For Data Science",
+        "description": "Take Your R & R Studio Skills To The Next Level. Data Analytics, Data Science, Statistical Analysis in Business, GGPlot2",
+        "rating": 4.7139425,
+        "img": "https://img-c.udemycdn.com/course/750x422/860148_4f31_7.jpg",
+        "students": 2923 ,
+        "price": 14.99
+      },
+      {
+        
+        "header": "Python for Data Science and Machine Learning Bootcamp",
+        "description": "Learn how to use NumPy, Pandas, Seaborn , Matplotlib , Plotly , Scikit-Learn , Machine Learning, Tensorflow , and more!",
+        "rating": 4.656405,
+        "img": "https://img-c.udemycdn.com/course/750x422/903744_8eb2.jpg",
+        "students": 2923 ,
+        "price": 14.99
+      },
+      {
+        
+        "header": "Python A-Z™: Python For Data Science With Real Exercises!",
+        "description": "Programming In Python For Data Analytics And Data Science. Learn Statistical Analysis, Data Mining And Visualization",
+        "rating": 4.6402526,
+        "img": "https://img-c.udemycdn.com/course/750x422/913448_e6e2_4.jpg",
+        "students": 2923 ,
+        "price": 14.99
+      },
+      {
+        
+        "header": "Machine Learning A-Z™: Hands-On Python & R In Data Science",
+        "description": "Learn to create Machine Learning Algorithms in Python and R from two Data Science experts. Code templates included.",
+        "rating": 4.591084,
+        "img": "https://img-c.udemycdn.com/course/750x422/950390_270f_3.jpg",
+        "students": 2923 ,
+        "price": 14.99
+      },
+      {
+        
+        "header": "Introduction to Machine Learning for Data Science",
+        "description": "A primer on Machine Learning for Data Science.  Revealed for everyday people, by the Backyard Data Scientist.",
+        "rating": 4.5745854,
+        "img": "https://img-c.udemycdn.com/course/750x422/971154_6799_2.jpg",
+        "students": 2923 ,
+        "price": 14.99
+      },
+      {
+        
+        "header": "SQL & Database Design A-Z™: Learn MS SQL Server + PostgreSQL",
+        "description": "Learn Both SQL Server & PostgreSQL By Doing. Enhance Your Data Analytics Career With Real World Data Science Exercises",
+        "rating": 4.6013513,
+        "img": "https://img-c.udemycdn.com/course/750x422/1036342_024e.jpg",
+        "students": 2923 ,
+        "price": 14.99
+      },
+      {
+        
+        "header": "Data Science : Master Machine Learning Without Coding",
+        "description": "Learn Fundamentals Of Data Science & Machine Learning With Rapidminer (No Coding). Dataset & Solutions Included.",
+        "rating": 4.483333,
+        "img": "https://img-c.udemycdn.com/course/750x422/1292838_f55d_2.jpg",
+        "students": 2923 ,
+        "price": 14.99
+      }
+    ]
+  }
