@@ -3,71 +3,130 @@ const courseTemplateone = document.querySelector("[template-containerone]")
 const userCardContainer = document.querySelector("[all-courses]")
 const userCardContainerone = document.querySelector("[courses-names]")
 const searchInput = document.querySelector("[data-search]")
-console.log(userCardContainer) ; 
+
 
 const fields = ["python" , "excel" , "web" , "js" , "data" , "aws" , "draw"] ; 
 let courses = []
+let currcourse = "python" ; 
+let filter = "" ; 
 
-searchInput.addEventListener("input", e => {
-  const value = e.target.value.toLowerCase()
-  
-  courses.forEach(course => {
-    const isVisible =
-      course.header.toLowerCase().includes(value) ||
-      course.description.toLowerCase().includes(value)
-    course.element.classList.toggle("hide", !isVisible)
+function setFocusToTextBox(goto){
+  var textbox = document.getElementById(goto);
+  textbox.focus();
+  textbox.scrollIntoView();
+}
+
+
+
+let searchbtn = document.getElementById("search-button") ; 
+  searchbtn.addEventListener("click" , (e) => {
+    let value = searchInput.value.toLowerCase() ; 
+    filter = value ; 
+    work(currcourse ,filter) ; 
+    setFocusToTextBox("headline") ; 
+    
   })
-})
+  
 
 
-function change_to(field){
+function partitioninto(currcourses , filter = ""){
+
+  userCardContainer.innerHTML = "" ; 
+  let howmany = 4 ; 
+  let width = screen.width; 
+  if(width<=1300) howmany = 3 ; 
+  if(width<768) howmany = 2 ;
+  if(width<600) howmany = 1 ; 
+
+  let partition = document.createElement("div");
+  partition.classList.add("carousel-item");
+  partition.classList.add("active");
+  
+  let nb = 0 ; 
+    currcourses.forEach(course => {
+      if(filter==="" || course.header.toLowerCase().includes(filter)===true){
+        if(nb<howmany){
+          partition.append(course.element) ; 
+        }
+        else{
+            nb = 0 ; 
+            userCardContainer.append(partition) ; 
+
+            partition = document.createElement("div");
+            partition.classList.add("carousel-item");
+            partition.append(course.element) ; 
+            
+        }
+        nb++ ; 
+      }
+      
+    })    
+    if(nb>0) userCardContainer.append(partition) ; 
+    
+  
+
+}
+
+async function change_to(field){
+
+
   
   userCardContainer.innerHTML = "" ; 
   userCardContainerone.innerHTML = "" ; 
-  let t = "active" ; 
-  course = [] ; 
-  fetch(`${field}.json`)
-  .then(res => res.json())
-  .then(data => {
+  courses = [] ; 
+  const res = await fetch(`${field}.json`) ; 
+  const data = await res.json() ; 
+    
     const templatecourseone = courseTemplateone.content.cloneNode(true).children[0]
     templatecourseone.querySelector("[header-text-container]").textContent = data.head.content ; 
     templatecourseone.querySelector("[par-text-container]").textContent = data.desc.content ; 
     templatecourseone.querySelector("[explore-python-container]").textContent = data.btn.content ; 
-    userCardContainerone.appendChild(templatecourseone) ; 
-      courses = data.coursees.map(course => {
+    userCardContainerone.append(templatecourseone) ; 
 
-        const templatecourse = courseTemplate.content.cloneNode(true).children[0]
-        console.log(course) ; 
-        console.log(templatecourse) ; 
-        if(t!=""){
-          templatecourse.querySelector("[course-title]").classList.add(t) ; 
-           t = "" ; 
-        }
-        templatecourse.querySelector("[course-image]").src = course.img
-        templatecourse.querySelector("[course-header]").textContent = course.header
-        templatecourse.querySelector("[course-paragraph]").textContent = course.description
-        templatecourse.querySelector("[course-note]").textContent = course.rating
-        templatecourse.querySelector("[course-students]").textContent = course.students
-        templatecourse.querySelector("[price-div]").textContent = course.price
-        
-        
-        userCardContainer.append(templatecourse)
-        
+
+      courses = data.coursees.map(course => {
       
-      
-        return {header:course.header , description:course.description ,element:templatecourse}
+          const templatecourse = courseTemplate.content.cloneNode(true).children[0]
+          
+          templatecourse.querySelector("[course-image]").src = course.img
+          templatecourse.querySelector("[course-header]").textContent = course.header
+          templatecourse.querySelector("[course-paragraph]").textContent = course.description
+          templatecourse.querySelector("[course-note]").textContent = course.rating
+          templatecourse.querySelector("[course-students]").textContent = course.students
+          templatecourse.querySelector("[price-div]").textContent = course.price
+          
+          return {header:course.header , description:course.description ,element:templatecourse}
+  
       })
-    
-  })
+
+  
 }
 
-change_to("python") ; 
+
+
+async function work(field , filter = "") {
+  
+  await change_to(field) ;
+  partitioninto(courses , filter) ; 
+
+}
+
+
 
 fields.forEach(field =>{
   const clik = document.getElementById(field) ; 
   clik.addEventListener("click" , () => {
     
-
-    change_to(field) ; 
+    currcourse = field ; 
+    work(currcourse) ; 
+    
   })
 })
+
+window.addEventListener("resize", function(){
+  
+ work(currcourse , filter) ; 
+
+});
+
+work(currcourse , filter) ; 

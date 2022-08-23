@@ -30,7 +30,7 @@
                 <span class="bar"></span>
             </a>
            <div class="search-bar-container">
-                <button id="search-button">
+                <button id="search-button" type="submit" style="border: 0px;">
                     <img src="https://th.bing.com/th/id/R.1ed3eb5f2cf5b6fc82b6e5aa8635cac9?rik=%2fibd5nMZf6xg2w&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_200373.png&ehk=gCM3RB8if%2bxLUF8pOv0ABjWBLysVvRtuLy4ngj5lq3U%3d&risl=&pid=ImgRaw&r=0" alt="searh-icon" id = "search-icon">
                 </button>
                 <input type="text" placeholder="Search for anything" data-search>
@@ -73,7 +73,7 @@
     </div>
 
 
-    <div class="headline">
+    <div class="headline" id="headline">
         <div class="headline-main-text ">
             A broad selection of courses
         </div>
@@ -82,7 +82,7 @@
         </div>
         <ul class="nav nav-tabs container ">
             <li class="nav-item" id="python">
-                <button class="nav-link text-secondary a" data-bs-toggle="tab" type="button" >Python</button>
+                <button class="nav-link text-secondary " data-bs-toggle="tab" type="button" >Python</button>
             </li>
             <li class="nav-item" id="excel" >
                 <button class="nav-link text-secondary" data-bs-toggle="tab" type="button" >Excel</button>
@@ -110,38 +110,38 @@
     
 
        
-        <div class="courses-container" courses-container>
+        <div class="courses-container" courses-container >
 
-            <div class="courses-names-container"  courses-names>
-                
+                <div class="courses-names-container"  courses-names>
+                    
 
-                <template  template-containerone>
-
-
-                    <div>
-                            <div class="content-text-container" >
-                                <h2 class="header-text-container" header-text-container></h2>
-                                <p class="par-text-container" par-text-container></p>
-                            </div>
-        
-        
-                            <button class="explore-python-container " explore-python-container><h3></h3></button>
-                    </div>    
-                </template>
-                
+                    <template  template-containerone>
 
 
-            </div>   
+                        <div>
+                                <div class="content-text-container" >
+                                    <h2 class="header-text-container" header-text-container></h2>
+                                    <p class="par-text-container" par-text-container></p>
+                                </div>
+            
+            
+                                <button class="explore-python-container " explore-python-container><h3></h3></button>
+                        </div>    
+                    </template>
+                    
+
+
+                </div>   
             
                 
                  
               
-                <div id="carouselExampleControls" class="carousel slide"  data-bs-ride="carousel"  >
+                <div id="carouselExampleControls" class="carousel slide"     data-bs-interval="false" >
                     <div class="carousel-inner all-courses" all-courses>
                         
                         <template  template-container>
-                            <div>
-                            <div class="courses-titles carousel-item" course-title>
+                            
+                            <div class="courses-titles" course-title>
                                 <img class="d-block w-100" src="" alt="" id="course-image" course-image > 
                                 <h4 course-header></h4>
                                 <p course-paragraph></p>
@@ -156,18 +156,19 @@
                                 </div>
                                 <div class="course-price2" id="price-div" price-div></div>
                             </div>
-                        </div>
-                        </template>
-                    </div>  
-             
+                        
+                        </template> 
+                        
+                   
+                    </div>
                     <button class="text-bg-dark carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
-                      </button>
-                      <button class="text-bg-dark carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    </button>
+                    <button class="text-bg-dark carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
-                      </button>
+                    </button>
                      
                 </div>
 
@@ -228,7 +229,7 @@
 
         
 
-
+        
        
 
 
