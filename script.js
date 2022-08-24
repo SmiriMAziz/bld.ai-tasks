@@ -31,7 +31,7 @@ let searchbtn = document.getElementById("search-button") ;
 
 function partitioninto(currcourses , filter = ""){
 
-  userCardContainer.innerHTML = "" ; 
+  
   let howmany = 4 ; 
   let width = screen.width; 
   if(width<=1300) howmany = 3 ; 
@@ -71,11 +71,12 @@ async function change_to(field){
 
 
   
-  userCardContainer.innerHTML = "" ; 
-  userCardContainerone.innerHTML = "" ; 
+  
   courses = [] ; 
   const res = await fetch(`${field}.json`) ; 
   const data = await res.json() ; 
+  userCardContainer.innerHTML = "" ; 
+  userCardContainerone.innerHTML = "" ; 
     
     const templatecourseone = courseTemplateone.content.cloneNode(true).children[0]
     templatecourseone.querySelector("[header-text-container]").textContent = data.head.content ; 
